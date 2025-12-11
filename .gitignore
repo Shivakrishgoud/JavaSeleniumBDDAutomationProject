@@ -1,78 +1,59 @@
-##############################
-# Maven Build
-##############################
-target/
-!src/main/resources/
-!src/test/resources/
 
-##############################
-# Eclipse Specific
-##############################
+# ----------------------------
+# Maven build directories
+# ----------------------------
+target/
+build/
+
+# ----------------------------
+# Logs and reports
+# ----------------------------
+*.log
+test-output/
+reports/
+allure-results/
+allure-report/
+extent-output/
+screenshots/
+
+# ----------------------------
+# Eclipse specific files
+# ----------------------------
 .classpath
 .project
 .settings/
-bin/
 
-##############################
-# IntelliJ (in case you switch IDE)
-##############################
+# ----------------------------
+# IntelliJ IDEA files (if someone opens in IDEA)
+# ----------------------------
 .idea/
 *.iml
-out/
 
-##############################
-# OS Files
-##############################
+# ----------------------------
+# VS Code
+# ----------------------------
+.vscode/
+
+# ----------------------------
+# OS-generated files
+# ----------------------------
 .DS_Store
 Thumbs.db
+Desktop.ini
 
-##############################
-# Logs & Temp Files
-##############################
-*.log
-*.tmp
-*.swp
-
-##############################
-# Java Generated Files
-##############################
+# ----------------------------
+# Java specific ignore
+# ----------------------------
 *.class
+*.jar
+*.war
+*.ear
 
-##############################
-# Test Reports & Artifacts
-##############################
-test-output/
-surefire-reports/
-failsafe-reports/
-allure-results/
-allure-report/
-reports/
-screenshots/
-
-##############################
-# Maven Wrapper Files (optional)
-##############################
-.mvn/
-mvnw
-mvnw.cmd
-
-##############################
-# Environment Files (Secrets)
-##############################
+# ----------------------------
+# Environment / Secrets
+# ----------------------------
 *.env
 *.key
 *.pem
-credentials.json
-
-##############################
-# Cucumber Generated Files
-##############################
-*.json
-*.html
-*.rerun
-
-##############################
-# Node (if frontend included)
-##############################
-node_modules/
+*.secret
 

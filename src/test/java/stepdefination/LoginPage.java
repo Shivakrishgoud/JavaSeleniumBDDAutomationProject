@@ -1,11 +1,10 @@
-package Selenium.AutomationPractice;
+package stepdefination;
 
-public class BaseTest {
+public class LoginPage {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
 
-	
 }
