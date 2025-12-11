@@ -9,4 +9,5 @@ Feature: Checkout Process
     And chooses payment method "Credit Card"
     And confirms the order
     Then the order should be placed successfully
+ 
 
