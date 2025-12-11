@@ -1,0 +1,78 @@
+##############################
+# Maven Build
+##############################
+target/
+!src/main/resources/
+!src/test/resources/
+
+##############################
+# Eclipse Specific
+##############################
+.classpath
+.project
+.settings/
+bin/
+
+##############################
+# IntelliJ (in case you switch IDE)
+##############################
+.idea/
+*.iml
+out/
+
+##############################
+# OS Files
+##############################
+.DS_Store
+Thumbs.db
+
+##############################
+# Logs & Temp Files
+##############################
+*.log
+*.tmp
+*.swp
+
+##############################
+# Java Generated Files
+##############################
+*.class
+
+##############################
+# Test Reports & Artifacts
+##############################
+test-output/
+surefire-reports/
+failsafe-reports/
+allure-results/
+allure-report/
+reports/
+screenshots/
+
+##############################
+# Maven Wrapper Files (optional)
+##############################
+.mvn/
+mvnw
+mvnw.cmd
+
+##############################
+# Environment Files (Secrets)
+##############################
+*.env
+*.key
+*.pem
+credentials.json
+
+##############################
+# Cucumber Generated Files
+##############################
+*.json
+*.html
+*.rerun
+
+##############################
+# Node (if frontend included)
+##############################
+node_modules/
+
