@@ -1,10 +1,10 @@
+Feature: Add Product to Cart
 
-Feature: add prodct to the cart
+  Background:
+    Given the user is logged in
 
-  Scenario: Add a single product
-    Given on the products page
-    And search for the product
-    When click on the product
-    And click on add to cart button
-    Then Click on the cart menu
-    And check if items are added
+  Scenario: Add product from search results to cart
+    Given the user searches for "iPhone 14"
+    When the user selects the first product from the results
+    And clicks on Add to Cart
+    Then the product should be added to the cart
